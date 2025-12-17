@@ -281,8 +281,6 @@ lightdm
 lightdm-gtk-greeter
 
 # --- Design & Themes (Look & Color) ---
-arc-gtk-theme
-papirus-icon-theme
 lxappearance
 
 # --- Gaming & Performance ---
