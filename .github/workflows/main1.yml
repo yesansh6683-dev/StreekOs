@@ -1,0 +1,30 @@
+name: Build Streekx OS
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: archlinux:latest
+      options: --privileged
+    steps:
+      - name: Security Keys Fix Karo
+        run: |
+          pacman-key --init
+          pacman-key --populate
+          pacman -Sy --noconfirm archiso
+
+      - name: Code Le Aao
+        uses: actions/checkout@v4
+
+      - name: Streekx OS Build Karo
+        run: |
+          mkarchiso -v -w /tmp/archiso-tmp -o ./out ./archiso
+
+      - name: ISO Upload Karo
+        uses: actions/upload-artifact@v4
+        with:
+          name: Streekx-OS-ISO
+          path: ./out/*.iso
+
