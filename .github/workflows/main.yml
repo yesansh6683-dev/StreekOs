@@ -9,12 +9,14 @@ jobs:
       image: archlinux:latest
       options: --privileged
     steps:
+      - name: Security Keys Fix Karo
+        run: |
+          pacman-key --init
+          pacman-key --populate
+          pacman -Sy --noconfirm archiso
+
       - name: Code Le Aao
         uses: actions/checkout@v4
-
-      - name: ArchISO Install Karo
-        run: |
-          pacman -Sy --noconfirm archiso
 
       - name: Streekx OS Build Karo
         run: |
