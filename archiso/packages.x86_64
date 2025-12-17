@@ -273,3 +273,20 @@ git
 
 #grub theme
 alci-grub-theme-git
+
+# --- Desktop Environment (UI) ---
+xfce4
+xfce4-goodies
+lightdm
+lightdm-gtk-greeter
+
+# --- Design & Themes (Look & Color) ---
+arc-gtk-theme
+papirus-icon-theme
+lxappearance
+
+# --- Gaming & Performance ---
+steam
+gamemode
+lutris
+wine
