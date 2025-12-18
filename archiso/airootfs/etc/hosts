@@ -1,0 +1,11 @@
+# --- Streekx Internet Filter ---
+127.0.0.1   google.com
+127.0.0.1   www.google.com
+127.0.0.1   facebook.com
+127.0.0.1   youtube.com
+127.0.0.1   instagram.com
+
+# --- Allow Streekx Only ---
+# Yahan aapki company ka IP aur domain aayega
+1.2.3.4     streekx-world.com
+
