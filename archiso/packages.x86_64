@@ -1,5 +1,12 @@
+# --- Archiso Boot Essentials (Inhe rehne dena zaroori hai) ---
+syslinux
+memtest86+
+memtest86+-efi
+edk2-shell
+mkinitcpio
+mkinitcpio-archiso
 
-# --- Core System (Boot hone ke liye zaroori) ---
+# --- Core System ---
 base
 linux
 linux-firmware
@@ -24,11 +31,12 @@ lxappearance
 git
 alci-grub-theme-git
 
-# --- System Drivers (Laptop ke liye) ---
+# --- System Drivers ---
 xf86-video-intel
 xf86-video-amdgpu
 xf86-video-nouveau
 virtualbox-guest-utils
 
-# --- Performance (New World Features) ---
+# --- Performance ---
 gamemode
+
