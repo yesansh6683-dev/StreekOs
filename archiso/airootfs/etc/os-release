@@ -1,0 +1,7 @@
+NAME="Streekx OS"
+PRETTY_NAME="Streekx New World OS"
+ID=streekx
+ID_LIKE=arch
+BUILD_ID=v1
+HOME_URL="https://streekx-world.com/"
+
