@@ -27,3 +27,13 @@ jobs:
         with:
           name: Streekx-OS-ISO
           path: ./out/*.iso
+          
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: /__w/StreekOs/StreekOs/out/*.iso
+          tag_name: v1.0
+          name: Streekx OS New World Release
+          body: "Aapka Streekx OS taiyar hai. Yahan se download karein."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
